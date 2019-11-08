@@ -1,5 +1,8 @@
 body {
-  background: cornsilk;
+  /* background: cornsilk; */
+  background-image: url("./assets/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .pure-button {
