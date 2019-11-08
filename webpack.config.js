@@ -1,7 +1,7 @@
+const merge = require("webpack-merge");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const ErrorOverlayPlugin = require("error-overlay-webpack-plugin");
 // const FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
-const merge = require("webpack-merge");
 
 const parts = require("./webpack.parts");
 
@@ -12,7 +12,8 @@ const commonConfig = merge([
         title: "Webpack demo"
       })
     ]
-  }
+  },
+  parts.loadCSS()
 ]);
 
 const productionConfig = merge([]);
