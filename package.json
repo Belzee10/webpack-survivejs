@@ -33,6 +33,8 @@
     "webpack-notifier": "^1.8.0"
   },
   "dependencies": {
-    "purecss": "^1.0.1"
+    "purecss": "^1.0.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   }
 }
