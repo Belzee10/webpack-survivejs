@@ -19,7 +19,8 @@ const commonConfig = merge([
       }),
       new FriendlyErrorsWebpackPlugin()
     ]
-  }
+  },
+  parts.loadJavaScript({ include: PATHS.app })
 ]);
 
 const productionConfig = merge([
