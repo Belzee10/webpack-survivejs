@@ -85,5 +85,19 @@ exports.loadJavaScript = ({ include, exclude } = {}) => ({
 });
 
 exports.generateSourceMaps = ({ type }) => ({
-  devtool: type,
+  devtool: type
+});
+
+exports.splitBundles = ({ name, chunks }) => ({
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name,
+          chunks
+        }
+      }
+    }
+  }
 });

@@ -36,6 +36,10 @@ const productionConfig = merge([
       limit: 15000,
       name: "[name].[ext]"
     }
+  }),
+  parts.splitBundles({
+    name: "vendor",
+    chunks: "initial"
   })
 ]);
 
